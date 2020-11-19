@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores Lógico</title>
+  </head>
+  <body>
+    <script>
+      let verdade = true;
+      let mentira = false;
+
+      //Exemplo de resultado da "Tabela verdade" do operador lógico E (&&)
+      let verdadeEVerdade = verdade && verdade;
+      let verdadeEMentira = verdade && mentira;
+      let mentiraEverdade = mentira && verdade;
+      let mentiraEmentira = mentira && mentira;
+
+      console.log("Tabela verdade do &&");
+      console.log("verdade E verdade:", verdadeEVerdade);
+      console.log("verdade E mentira:", verdadeEMentira);
+      console.log("mentira E verdade:", mentiraEverdade);
+      console.log("mentira E mentira:", mentiraEmentira);
+
+      //Exemplo de resultado da "Tabela verdade" do operador lógico OU (||)
+      verdadeEVerdade = verdade || verdade;
+      verdadeEMentira = verdade || mentira;
+      mentiraEverdade = mentira || verdade;
+      mentiraEmentira = mentira || mentira;
+
+      console.log("Tabela verdade do ||");
+      console.log("verdade E verdade:", verdadeEVerdade);
+      console.log("verdade E mentira:", verdadeEMentira);
+      console.log("mentira E verdade:", mentiraEverdade);
+      console.log("mentira E mentira:", mentiraEmentira);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores Booleanos</title>
+  </head>
+  <body>
+    <script>
+      //Exemplo de comparação de textos
+      let nome = "Epaminondas";
+
+      let oNomeEhEpaminondas = nome == "Epaminondas Junior";
+
+      console.log("O nome é Epaminondas? ", oNomeEhEpaminondas);
+
+      //Exemplo de comparação de número
+      let idade = 29;
+
+      console.log("Tem a idade do professor Marcelo? ", idade == 29);
+
+      //Exemplo de comparação de booleanos
+      console.log("True é false? ", true == false);
+      console.log("False é false? ", false == false);
+
+      /*
+      Exemplo de comparação de valores iguais porém com tipos diferentes
+      usando '=='
+      */
+      const PI = 3.14156;
+      let valorDoPiEmTexto = "3.14156";
+
+      console.log(
+        "O texto (PI) é igual ao valor numerico do PI?",
+        PI == valorDoPiEmTexto
+      );
+
+      /*
+      Exemplo de comparação de valores iguais porém com tipos diferentes
+      usando '==='
+      */
+      console.log(
+        "O texto (PI) é igual ao valor numerico do PI considerando o tipo de dado?",
+        PI === valorDoPiEmTexto
+      );
+
+      //Exemplo de comparação de números
+      let valorA = 250;
+      let valorB = 2;
+      let valorC = 250;
+      let valorD = 249;
+
+      let AEhMaiorQueB = valorA > valorB;
+
+      console.log("Valor de A é maior que o valor de B?", AEhMaiorQueB);
+
+      let AEhMenorQueB = valorA < valorB;
+
+      console.log("Valor de A é menor que o valor de B?", AEhMenorQueB);
+
+      let AEhMaiorOuIgualQueC = valorA >= valorC;
+
+      console.log(
+        "Valor de A é maior ou igual que o valor de C?",
+        AEhMaiorOuIgualQueC
+      );
+
+      let AEhMenorOuIgualQueD = valorA <= valorD;
+
+      console.log(
+        "Valor de A é menor ou igual que o valor de D?",
+        AEhMenorOuIgualQueD
+      );
+    </script>
+  </body>
+</html>
