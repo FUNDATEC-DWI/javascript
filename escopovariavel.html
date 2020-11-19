@@ -7,7 +7,35 @@
   </head>
   <body>
     <script>
-      console.log(984984981 % 2);
+      /*
+       * Quando declaramos variáveis com a palavra-chave 'var',
+       * essas variáveis são globais, visíveis em qualquer ponto do código
+       */
+      var global1 = "valor global 1";
+
+      /*
+       * Quando declaramos variáveis com a palavra-chave 'let',
+       * essas variáveis são locais, visíveis apenas no bloco atual do código
+       */
+      let local1 = "valor local 1";
+
+      {
+        var global2 = "valor global 2";
+        let local2 = "valor local 2";
+
+        console.log(global1);
+        console.log(global2);
+
+        console.log(local1);
+        console.log(local2);
+      }
+
+      console.log(global1);
+      console.log(global2);
+
+      console.log(local1);
+      //Essa variavel não foi declarado no bloco mais externo, se descomentar o código, ocorre um erro!
+      //console.log(local2);
     </script>
   </body>
 </html>
