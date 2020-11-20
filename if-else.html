@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If e Else</title>
+  </head>
+  <body>
+    <script>
+      let idadeDeUmaPessoa = 18;
+      let possuiCarteiraDeMotorista = "sim";
+
+      if (idadeDeUmaPessoa >= 18) {
+        console.log("Caiu no IF!");
+        alert("Você é maior de idade");
+      } else {
+        console.log("Caiu no ELSE!");
+        alert("Você é menor de idade");
+      }
+
+      if (idadeDeUmaPessoa >= 18 && possuiCarteiraDeMotorista == "sim") {
+        alert("Você pode dirigir um carro!");
+      }
+
+      let ehMaiorDeIdade = idadeDeUmaPessoa >= 18;
+      let temCarteira = possuiCarteiraDeMotorista == "sim";
+
+      if (ehMaiorDeIdade && temCarteira) {
+        alert("Você pode dirigir um carro!");
+      }
+    </script>
+  </body>
+</html>

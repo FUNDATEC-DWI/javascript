@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções</title>
+  </head>
+  <body>
+    <script>
+      //aqui declaramos a função, mas não estamos chamando ela!
+      function transformaParaMaiusculo(texto) {
+        let textoEmMaiusculo = texto.toUpperCase();
+
+        return textoEmMaiusculo;
+      }
+
+      //aqui chamamos a função de fato
+      let retornoDaFuncao = transformaParaMaiusculo(
+        "Desenvolvimento Web é D+!"
+      );
+      console.log(retornoDaFuncao);
+
+      function formataNumero(numero, quantidadeDeCasasDecimais) {
+        return numero.toFixed(quantidadeDeCasasDecimais);
+      }
+
+      let valorEmReais = 15;
+
+      console.log(
+        "Formatando para todo o comércio MENOS o posto de gasolina: " +
+          formataNumero(valorEmReais, 2)
+      );
+
+      console.log(
+        "Formatando para todo APENAS o posto de gasolina: " +
+          formataNumero(valorEmReais, 3)
+      );
+    </script>
+  </body>
+</html>
